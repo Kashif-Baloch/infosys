@@ -69,7 +69,7 @@ const PricingSection = () => {
                 <h4 className=" text-gray-500">For Small Size Businessess</h4>
                 <div className="flex items-end mt-6 leading-7 text-gray-900 border-0 border-gray-200">
                   <p className="box-border m-0 text-4xl font-semibold leading-none border-solid">
-                    $49.00
+                    $99.00
                   </p>
                   <p className="box-border m-0 border-solid">/per month</p>
                 </div>
@@ -110,7 +110,7 @@ const PricingSection = () => {
                 <h4 className=" text-gray-500">For Small Size Businessess</h4>
                 <div className="flex items-end mt-6 leading-7 text-gray-900 border-0 border-gray-200">
                   <p className="box-border m-0 text-4xl font-semibold leading-none border-solid">
-                    $49.00
+                    $199.00
                   </p>
                   <p className="box-border m-0 border-solid">/per month</p>
                 </div>

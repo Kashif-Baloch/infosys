@@ -12,7 +12,7 @@ const TeamSection = () => {
         />
         <div className="grid mt-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="text-center bg-[#EAF9FF]">
-            <img className="w-100" src="/assets/pngs/Rectangle 42.png" />
+            <img className="w-[100%]" src="/assets/pngs/Rectangle 42.png" />
             <div className="p-4">
               <div className="flex flex-col gap-4">
                 <a
@@ -26,7 +26,7 @@ const TeamSection = () => {
             </div>
           </div>
           <div className="text-center bg-[#EAF9FF]">
-            <img className="w-100" src="/assets/pngs/Rectangle 42 (1).png" />
+            <img className="w-[100%]" src="/assets/pngs/Rectangle 42 (1).png" />
             <div className="p-4">
               <div className="flex flex-col gap-4">
                 <a
@@ -42,7 +42,7 @@ const TeamSection = () => {
             </div>
           </div>
           <div className="text-center bg-[#EAF9FF]">
-            <img className="w-100" src="/assets/pngs/Rectangle 42 (2).png" />
+            <img className="w-[100%]" src="/assets/pngs/Rectangle 42 (2).png" />
             <div className="p-4">
               <div className="flex flex-col gap-4">
                 <a

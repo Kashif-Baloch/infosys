@@ -5,6 +5,9 @@ const TestimonialSection = () => {
   return (
     <div className="w-[90%] mt-14 mx-auto">
       <div className="container mx-auto">
+        <div className="flex items-center justify-center my-2">
+          <img className=" w-[9%]" src="/assets/newsvgs/Group 20.svg" alt="" />
+        </div>
         <Heading
           ht={"TESTIMONIAL"}
           hft={"What Our Client Say About"}

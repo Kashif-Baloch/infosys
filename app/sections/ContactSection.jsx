@@ -19,11 +19,7 @@ const ContactSection = () => {
               <h2 className="text-black font-bold">Reply within 24 hours</h2>
             </div>
             <div className="flex items-center gap-3">
-              <img
-                className="w-6"
-                src="/assets/svgs/phone-call (1) 1.svg"
-                alt=""
-              />
+              <img className="w-6" src="/assets/newsvgs/call.svg" alt="" />
               <h2 className="text-black font-bold">24 hrs telephone support</h2>
             </div>
           </div>

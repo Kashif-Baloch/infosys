@@ -2,7 +2,7 @@ import React from "react";
 
 const SponserSection = () => {
   return (
-    <div className="w-[90%] mt-16  mx-auto">
+    <div className="w-[90%] mt-20 mb-12  mx-auto">
       <div className="container mx-auto">
         <div className="flex flex-wrap items-center gap-8 lg:gap-0 justify-center mt-2 md:justify-around">
           <div className="text-gray-400 ">

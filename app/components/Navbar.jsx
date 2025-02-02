@@ -44,7 +44,7 @@ const Navbar = () => {
             <div className="flex items-center gap-2">
               <img
                 className="w-4"
-                src="/assets/svgs/phone-call (1) 1 (1).svg"
+                src="/assets/newsvgs/call white.svg"
                 alt=""
               />
               <h3 className="text-sm">+92 1234567890</h3>
@@ -115,7 +115,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="flex items-center gap-5">
-            <img src="/assets/svgs/magnifying-glass 1.svg" alt="Search" />
+            <img src="/assets/newsvgs/search.svg" alt="Search" />
             <Link
               href="/download"
               className="hidden text-center lg:flex text-gray-100 bg-[#00A3F7] py-2 px-3 loto text-[16px]"

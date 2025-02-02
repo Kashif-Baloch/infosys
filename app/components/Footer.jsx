@@ -31,7 +31,9 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div className="flex flex-col md:ml-16 justify-center mt-6 lg:-mt-6">
-          <h3 className="text-xl font-semibold">Get to Touch</h3>
+          <h3 className="text-xl font-semibold border-b-4 border-[#00A3F7] py-1 w-fit">
+            Get to Touch
+          </h3>
           <ul className="mt-4 space-y-2 text-sm">
             <li className="flex gap-2">
               <img className="w-4" src="/assets/svgs/mdi_location.svg" alt="" />
@@ -72,7 +74,9 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div className="flex flex-col mt-6 lg:mt-0 lg:ml-16 justify-center">
-          <h3 className="text-xl font-semibold">Quick Links</h3>
+          <h3 className="text-xl font-semibold border-b-4 border-[#00A3F7] py-1 w-fit">
+            Quick Links
+          </h3>
           <ul className="mt-4 space-y-2 text-sm">
             <li className="flex gap-2">
               <img className="w-4" src="/assets/svgs/Vector.svg" alt="" />
@@ -107,7 +111,9 @@ const Footer = () => {
 
         {/* Popular Links */}
         <div className="flex flex-col md:ml-16 lg:ml-0  mt-6 md:mt-0 justify-center">
-          <h3 className="text-xl font-semibold">Popular Links</h3>
+          <h3 className="text-xl font-semibold border-b-4 border-[#00A3F7] py-1 w-fit">
+            Popular Links
+          </h3>
           <ul className="mt-4 space-y-2 text-sm">
             <li className="flex gap-2">
               <img className="w-4" src="/assets/svgs/Vector.svg" alt="" />

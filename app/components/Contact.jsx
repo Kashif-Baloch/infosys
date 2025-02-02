@@ -7,7 +7,7 @@ const Contact = () => {
       <Heading
         ht={"Contact Us"}
         hft={"If You Have Any Query, Feel"}
-        hfb={"To To Cotact Us"}
+        hfb={"Free To Cotact Us"}
       />
       <div className="flex w-[90%] flex-wrap mx-auto items-center justify-between">
         <div className="flex items-center gap-4 mt-5">
@@ -27,26 +27,26 @@ const Contact = () => {
           <div className="bg-[#00A3F7] p-4">
             <img
               className="w-6 h-6"
-              src="/assets/svgs/phone-call (1) 1 (1).svg"
+              src="/assets/svgs/ic_baseline-mail.svg"
               alt=""
             />
           </div>
           <div className="text-[#00A3F7]">
-            <h3 className="text-black text-sm">Call To Ask Any Question</h3>
-            <h2>+91 1234567890</h2>
+            <h3 className="text-black text-sm">Email To Get Free Quote</h3>
+            <h2>mail@domain.com</h2>
           </div>
         </div>
         <div className="flex items-center gap-4 mt-5">
           <div className="bg-[#00A3F7] p-4">
             <img
               className="w-6 h-6"
-              src="/assets/svgs/phone-call (1) 1 (1).svg"
+              src="/assets/svgs/mdi_location.svg"
               alt=""
             />
           </div>
           <div className="text-[#00A3F7]">
-            <h3 className="text-black text-sm">Call To Ask Any Question</h3>
-            <h2>+91 1234567890</h2>
+            <h3 className="text-black text-sm">Visit Our Office</h3>
+            <h2>123 Street, New York, USA</h2>
           </div>
         </div>
       </div>
@@ -62,6 +62,7 @@ const Contact = () => {
                         <input
                           type="text"
                           id="name"
+                          placeholder="Name"
                           name="name"
                           className="w-full bg-[#EAF9FF] rounded border border-gray-300  text-base outline-none text-gray-700 py-1 px-3 leading-8"
                         />
@@ -71,6 +72,7 @@ const Contact = () => {
                       <div className="relative">
                         <input
                           type="email"
+                          placeholder="Email"
                           id="email"
                           name="email"
                           className="w-full bg-[#EAF9FF] rounded border border-gray-300  text-base outline-none text-gray-700 py-1 px-3 leading-8"
@@ -82,6 +84,7 @@ const Contact = () => {
                         <input
                           type="text"
                           id="subject"
+                          placeholder="Subject"
                           name="subject"
                           className="w-full bg-[#EAF9FF] rounded border border-gray-300  text-base outline-none text-gray-700 py-1 px-3 leading-8"
                         />
@@ -91,6 +94,7 @@ const Contact = () => {
                       <div className="relative">
                         <textarea
                           id="message"
+                          placeholder="Message"
                           name="message"
                           className="w-full bg-[#EAF9FF] rounded border border-gray-300 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6"
                         ></textarea>

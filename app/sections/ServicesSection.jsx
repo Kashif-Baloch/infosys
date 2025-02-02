@@ -4,7 +4,7 @@ import Heading from "../components/Heading";
 const ServicesSection = () => {
   const services = [
     {
-      image: "/assets/svgs/cyber_security.svg",
+      image: "/assets/newsvgs/cyber_security.svg",
       title: "Cyber Security",
       description: `Cybersecurity refers to the practice of protecting computer
               systems, networks, and digital data from theft, damage, or
@@ -23,7 +23,7 @@ const ServicesSection = () => {
       description: `Web development is the process of creating and maintaining websites or web applications for the internet. It involves a combination of skills and technologies to design, build, and manage websites.`,
     },
     {
-      image: "/assets/svgs/cyber_security.svg",
+      image: "/assets/newsvgs/cyber_security.svg",
       title: "App Development",
       description: `App development refers to the process of creating software applications, often designed to run on mobile devices like smartphones and tablets, but it can also refer to applications for desktop computers or web-based platforms.`,
     },
