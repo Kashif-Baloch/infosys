@@ -3,10 +3,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import { motion } from "framer-motion";
 
 const Hero = ({ bred }) => {
   return (
-    <div>
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 1 }}
+    >
       <Swiper
         modules={[Navigation]}
         navigation={true}
@@ -50,7 +55,7 @@ const Hero = ({ bred }) => {
           </SwiperSlide>
         </div>
       </Swiper>
-    </div>
+    </motion.div>
   );
 };
 

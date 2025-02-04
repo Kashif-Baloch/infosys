@@ -16,6 +16,24 @@ const TestimonialSection = () => {
             maintain various aspects of computing and information systems.`,
     },
     {
+      name: "Michael Anderson",
+      role: "PROFESSION",
+      img: "/assets/pngs/Rectangle 24.png", // Replace with actual image path
+      text: `The Information Technology (IT) field encompasses a wide range of
+            professions and career opportunities. IT professionals work with
+            technology systems and software to design, develop, manage, and
+            maintain various aspects of computing and information systems.`,
+    },
+    {
+      name: "Michael Anderson",
+      role: "PROFESSION",
+      img: "/assets/pngs/Rectangle 24.png", // Replace with actual image path
+      text: `The Information Technology (IT) field encompasses a wide range of
+            professions and career opportunities. IT professionals work with
+            technology systems and software to design, develop, manage, and
+            maintain various aspects of computing and information systems.`,
+    },
+    {
       name: "Emily Davis",
       role: "BUSINESS WOMAN",
       img: "/assets/pngs/Rectangle 25.png",
@@ -41,7 +59,9 @@ const TestimonialSection = () => {
             desktop computers, web browsers, and more.`,
     },
   ];
+
   const [activePoint, setActivePoint] = useState(0);
+
   return (
     <motion.div
       whileInView={{ opacity: 1, y: 0 }}
