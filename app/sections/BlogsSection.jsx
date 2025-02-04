@@ -57,7 +57,7 @@ const BlogsSection = () => {
 
                     <Link
                       className="text-[#00A3F7] flex items-center gap-3 ml-5 my-6"
-                      href="/"
+                      href="/pages/blog/blog-title"
                     >
                       Read More{" "}
                       <span>

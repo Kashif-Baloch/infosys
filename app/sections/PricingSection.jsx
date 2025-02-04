@@ -1,5 +1,6 @@
 import React from "react";
 import Heading from "../components/Heading";
+import Link from "next/link";
 
 const PricingSection = () => {
   return (
@@ -54,12 +55,12 @@ const PricingSection = () => {
                     />
                   </li>
                 </ul>
-                <a
+                <Link
                   className="bg-[#00A3F7] mt-8 px-3 py-1 text-sm w-fit text-white"
-                  href="/"
+                  href="/pages/contact"
                 >
                   Order Now
-                </a>
+                </Link>
               </div>
               {/* <!-- Price 2 --> */}
               <div className="relative w-full h-fit z-20 lg:shadow-2xl flex flex-col max-w-md p-4 mx-auto my-0 bg-white sm:p-6 md:px-12 md:py-[54px]">
@@ -95,12 +96,12 @@ const PricingSection = () => {
                     />
                   </li>
                 </ul>
-                <a
+                <Link
                   className="bg-[#00A3F7] mt-8 px-3 py-1 text-sm w-fit text-white"
-                  href="/"
+                  href="/pages/contact"
                 >
                   Order Now
-                </a>
+                </Link>
               </div>
               {/* <!-- Price 3 --> */}
               <div className="relative w-full h-fit bg-[#EAF9FF] z-10 flex flex-col  max-w-md p-4 mx-auto my-0 lg:-ml-3 sm:my-0 sm:p-6 md:my-2 md:p-12">
@@ -132,12 +133,12 @@ const PricingSection = () => {
                     <img className="w-6" src="/assets/svgs/check.svg" alt="" />
                   </li>
                 </ul>
-                <a
+                <Link
                   className="bg-[#00A3F7] mt-8 px-3 py-1 text-sm w-fit text-white"
-                  href="/"
+                  href="/pages/contact"
                 >
                   Order Now
-                </a>
+                </Link>
               </div>
             </div>
           </div>

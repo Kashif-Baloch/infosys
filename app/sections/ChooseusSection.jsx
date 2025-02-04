@@ -48,11 +48,11 @@ const ChooseusSection = () => {
                 </div>
               </div>
             </div>
-            <div class="hidden imgres w-[45vw] lg:flex justify-center">
+            <div className="hidden imgres w-[45vw] lg:flex justify-center">
               <img
                 src="/assets/pngs/Rectangle 15.png"
                 alt="Team Working"
-                class=" w-full h-auto object-cover"
+                className=" w-full h-auto object-cover"
               />
             </div>
             <div className="flex h-full flex-col md:ml-5 gap-[2rem] md:gap-2">

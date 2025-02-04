@@ -1,3 +1,4 @@
+"use client";
 import AboutSection from "./sections/AboutSection";
 import BlogsSection from "./sections/BlogsSection";
 import ChooseusSection from "./sections/ChooseusSection";

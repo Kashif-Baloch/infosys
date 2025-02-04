@@ -1,3 +1,4 @@
+"use client";
 import Hero from "@/app/components/Hero";
 import ServicesSection from "@/app/sections/ServicesSection";
 import SponserSection from "@/app/sections/SponserSection";

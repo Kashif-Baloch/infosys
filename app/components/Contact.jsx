@@ -100,6 +100,16 @@ const Contact = () => {
                         ></textarea>
                       </div>
                     </div>
+                    <div className="p-2 w-full">
+                      <div className="relative">
+                        <button
+                          type="submit"
+                          className="w-full py-4 font-semibold text-white transition-colors bg-[#061E42] outline-none px-7"
+                        >
+                          Request A Quote
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

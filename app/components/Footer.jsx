@@ -1,7 +1,14 @@
+"use client";
+
+import Link from "next/link";
 import React from "react";
 
-// components/Footer.tsx
+// components/Footer.jsx
 const Footer = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <footer className="bg-[#061E42] relative mt-14 pt-8 text-white ">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
@@ -15,21 +22,24 @@ const Footer = () => {
             However, I would need more specific details or the name of the
             company you have in mind to provide you with accurate information.
           </p>
-          <div className="mt-4 flex">
+          <form onSubmit={handleSubmit} className="mt-4 flex">
             <input
               type="email"
               placeholder="Enter Your Email"
               className="px-4 py-1 w-[85%] text-black outline-none"
             />
-            <button className="text-center w-24 text-sm font-bold py-4 bg-[#061E42] text-white">
+            <button
+              type="submit"
+              className="text-center w-24 text-sm font-bold py-4 bg-[#061E42] text-white"
+            >
               Sign Up
             </button>
-          </div>
+          </form>
         </div>
 
         <div className="hidden lg:block w-[90%]"></div>
 
-        {/* Contact Info */}
+        {/* Get In Touch */}
         <div className="flex flex-col md:ml-16 justify-center mt-6 lg:-mt-6">
           <h3 className="text-xl font-semibold border-b-4 border-[#00A3F7] py-1 w-fit">
             Get to Touch
@@ -57,16 +67,28 @@ const Footer = () => {
             </li>
           </ul>
           <div className="mt-4 flex space-x-2">
-            <a href="#" className="bg-[#00A3F7] p-3">
+            <a
+              href="#"
+              className="bg-[#00A3F7] border border-[#00A3F7] hover:bg-transparent hover:border-white p-3"
+            >
               <img src="/assets/svgs/mdi_twitter.svg" alt="" />
             </a>
-            <a href="#" className="bg-[#00A3F7] p-3">
+            <a
+              href="#"
+              className="bg-[#00A3F7] border border-[#00A3F7] hover:bg-transparent hover:border-white p-3"
+            >
               <img src="/assets/svgs/ri_facebook-fill.svg" alt="" />
             </a>
-            <a href="#" className="bg-[#00A3F7] p-3">
+            <a
+              href="#"
+              className="bg-[#00A3F7] border border-[#00A3F7] hover:bg-transparent hover:border-white p-3"
+            >
               <img src="/assets/svgs/ri_linkedin-fill.svg" alt="" />
             </a>
-            <a href="#" className="bg-[#00A3F7] p-3">
+            <a
+              href="#"
+              className="bg-[#00A3F7] border border-[#00A3F7] hover:bg-transparent hover:border-white p-3"
+            >
               <img src="/assets/svgs/ri_instagram.svg" alt="" />
             </a>
           </div>
@@ -78,34 +100,52 @@ const Footer = () => {
             Quick Links
           </h3>
           <ul className="mt-4 space-y-2 text-sm">
-            <li className="flex gap-2">
+            <Link
+              href="/"
+              className="flex gap-2 hover:text-[#00A3F7] cursor-pointer"
+            >
               <img className="w-4" src="/assets/svgs/Vector.svg" alt="" />
               Home
-            </li>
-            <li className="flex gap-2">
+            </Link>
+            <Link
+              href="/pages/about"
+              className="flex gap-2 hover:text-[#00A3F7] cursor-pointer"
+            >
               <img className="w-4" src="/assets/svgs/Vector.svg" alt="" />
               About Us
-            </li>
+            </Link>
 
-            <li className="flex gap-2">
+            <Link
+              href="/pages/services"
+              className="flex gap-2 hover:text-[#00A3F7] cursor-pointer"
+            >
               <img className="w-4" src="/assets/svgs/Vector.svg" alt="" />
               Our Services
-            </li>
+            </Link>
 
-            <li className="flex gap-2">
+            <Link
+              href="/pages/about"
+              className="flex gap-2 hover:text-[#00A3F7] cursor-pointer"
+            >
               <img className="w-4" src="/assets/svgs/Vector.svg" alt="" />
               Meet The Team
-            </li>
+            </Link>
 
-            <li className="flex gap-2">
+            <Link
+              href="/pages/blogs"
+              className="flex gap-2 hover:text-[#00A3F7] cursor-pointer"
+            >
               <img className="w-4" src="/assets/svgs/Vector.svg" alt="" />
               Latest Blog
-            </li>
+            </Link>
 
-            <li className="flex gap-2">
+            <Link
+              href="/pages/contact"
+              className="flex gap-2 hover:text-[#00A3F7] cursor-pointer"
+            >
               <img className="w-4" src="/assets/svgs/Vector.svg" alt="" />
               Contact Us
-            </li>
+            </Link>
           </ul>
         </div>
 
@@ -115,47 +155,60 @@ const Footer = () => {
             Popular Links
           </h3>
           <ul className="mt-4 space-y-2 text-sm">
-            <li className="flex gap-2">
+            <Link
+              href="/"
+              className="flex gap-2 hover:text-[#00A3F7] cursor-pointer"
+            >
               <img className="w-4" src="/assets/svgs/Vector.svg" alt="" />
               Home
-            </li>
+            </Link>
 
-            <li className="flex gap-2">
+            <Link
+              href="/pages/about"
+              className="flex gap-2 hover:text-[#00A3F7] cursor-pointer"
+            >
               <img className="w-4" src="/assets/svgs/Vector.svg" alt="" />
               About Us
-            </li>
+            </Link>
 
-            <li className="flex gap-2">
+            <Link
+              href="/pages/services"
+              className="flex gap-2 hover:text-[#00A3F7] cursor-pointer"
+            >
               <img className="w-4" src="/assets/svgs/Vector.svg" alt="" />
               Our Services
-            </li>
+            </Link>
 
-            <li className="flex gap-2">
+            <Link
+              href="/pages/about"
+              className="flex gap-2 hover:text-[#00A3F7] cursor-pointer"
+            >
               <img className="w-4" src="/assets/svgs/Vector.svg" alt="" />
               Meet The Team
-            </li>
+            </Link>
 
-            <li className="flex gap-2">
+            <Link
+              href="/pages/blogs"
+              className="flex gap-2 hover:text-[#00A3F7] cursor-pointer"
+            >
               <img className="w-4" src="/assets/svgs/Vector.svg" alt="" />
               Latest Blog
-            </li>
+            </Link>
 
-            <li className="flex gap-2">
+            <Link
+              href="/pages/contact"
+              className="flex gap-2 hover:text-[#00A3F7] cursor-pointer"
+            >
               <img className="w-4" src="/assets/svgs/Vector.svg" alt="" />
               Contact Us
-            </li>
+            </Link>
           </ul>
         </div>
       </div>
 
       {/* Footer Bottom */}
       <div className="text-center text-sm mt-10 mb-0 bg-[#04142B] py-4">
-        <p>
-          © IT Agency Website. All Rights Reserved. Designed by{" "}
-          <a href="#" className="text-blue-400 hover:underline">
-            Jay Dhameilya
-          </a>
-        </p>
+        <p>© IT Agency Website. All Rights Reserved.</p>
       </div>
     </footer>
   );

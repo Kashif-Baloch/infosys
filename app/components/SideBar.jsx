@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import HeadingBlog from "./HeadingBlog";
 
-const SideBar = () => {
+const SideBar = ({ handleFilter, blog, handleSearch }) => {
   const bloglist = [
     {
       text: "Web Design",
@@ -65,6 +65,7 @@ const SideBar = () => {
       <div className="w-full flex flex-col p-6">
         <div className="flex ">
           <input
+            onChange={handleSearch}
             type="text"
             placeholder="Keywords"
             className="px-4 lg:w-[85%] text-black border-2 border-gray-400 outline-none"
@@ -84,7 +85,9 @@ const SideBar = () => {
                   className="flex items-center gap-3 my-2 px-3 py-1 bg-[#EAF9FF]"
                 >
                   <img src="/assets/svgs/right-arrow 1.svg" alt="" />
-                  <h2>{elem.text}</h2>
+                  <h2 className="cursor-pointer" onClick={handleFilter}>
+                    {elem.text}
+                  </h2>
                 </div>
               );
             })}
@@ -94,7 +97,7 @@ const SideBar = () => {
         <div className="mt-4 md:w-[90%] md:mx-auto">
           <HeadingBlog ht="Recent Post" />
           <div className="mt-6">
-            {bloglist.map((elem, index) => {
+            {blog.slice(0, 5).map((elem, index) => {
               return (
                 <div
                   key={index}
@@ -102,12 +105,14 @@ const SideBar = () => {
                 >
                   <img
                     className="h-12 text-sm w-12 cover object-fit"
-                    src="/assets/blogspng/Rectangle 44 (1).png"
-                    alt=""
+                    src={elem.image}
                   />
-                  <h2 className="font-semibold ">
-                    Lorem ipsum dolor sit amet adipi sicing.
-                  </h2>
+                  <Link
+                    href="/pages/blog/blog-title"
+                    className="font-semibold "
+                  >
+                    {elem.title.slice(0, 12)}...
+                  </Link>
                 </div>
               );
             })}

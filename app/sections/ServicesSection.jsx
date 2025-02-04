@@ -47,32 +47,26 @@ const ServicesSection = () => {
             return (
               <div
                 key={index}
-                className="bg-[#EAF9FF] rounded-lg text-center flex flex-col justify-center items-center p-6 gap-y-3 "
+                className="bg-[#EAF9FF] group transition-all hover:bg-[#00A3F7] rounded-lg text-center flex flex-col justify-center items-center p-6 gap-y-3 "
               >
                 <img src={elem.image} className="w-20" alt="" />
-                <h2 className="text-xl  font-semibold text-black dark:text-white mb-2">
+                <h2 className="text-xl  font-semibold text-black mb-2">
                   {elem.title}
                 </h2>
-                <p className="text-gray-600 dark:text-gray-300">
-                  {elem.description}
-                </p>
+                <p className="text-gray-600">{elem.description}</p>
               </div>
             );
           })}
 
-          <div className="bg-[#00A3F7] text-center flex flex-col justify-center items-center p-6 gap-y-3 ">
-            <h2 className="text-2xl text-white font-semibold mb-2">
-              Call Us For Quote
-            </h2>
-            <p className="text-white">
+          <div className="bg-[#00A3F7] text-white hover:bg-[#EAF9FF] hover:text-black transition-all text-center flex flex-col justify-center items-center p-6 gap-y-3 ">
+            <h2 className="text-2xl font-semibold mb-2">Call Us For Quote</h2>
+            <p>
               I'm just a text-based Al and I'm unable to make phone calls.
               However, if you're looking to request a quote from a specific
               business or service, you should find their contact information on
               their website or in any materials they've provided.
             </p>
-            <h2 className="text-2xl text-white font-semibold mb-2">
-              +91 1234567890
-            </h2>
+            <h2 className="text-2xl font-semibold mb-2">+91 1234567890</h2>
           </div>
         </div>
       </div>

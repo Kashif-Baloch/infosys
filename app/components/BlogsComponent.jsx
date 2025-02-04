@@ -1,42 +1,19 @@
 import React from "react";
 import Link from "next/link";
 
-const BlogsComponent = () => {
-  const blogs = [
-    {
-      image: "/assets/blogspng/Rectangle 44 (1).png",
-    },
-    {
-      image: "/assets/blogspng/Rectangle 44 (1).png",
-    },
-    {
-      image: "/assets/blogspng/Rectangle 44 (2).png",
-    },
-    {
-      image: "/assets/blogspng/Rectangle 44 (3).png",
-    },
-    {
-      image: "/assets/blogspng/Rectangle 44 (4).png",
-    },
-    {
-      image: "/assets/blogspng/Rectangle 44 (5).png",
-    },
-    {
-      image: "/assets/blogspng/Rectangle 44 (6).png",
-    },
-    {
-      image: "/assets/blogspng/Rectangle 44 (7).png",
-    },
-  ];
+const BlogsComponent = ({ blog }) => {
   return (
     <div>
       <div>
         <div className="w-[85%] mx-auto">
           <div className="container mx-auto">
-            <div className="grid mt-6 grid-cols-1 md:grid-cols-2 gap-6">
-              {blogs.map((elem, index) => {
+            <div className="grid transition-all mt-6 grid-cols-1 md:grid-cols-2 gap-6">
+              {blog.map((elem, index) => {
                 return (
-                  <div key={index} className="relative bg-[#EAF9FF]">
+                  <div
+                    key={index}
+                    className="relative transition-all bg-[#EAF9FF]"
+                  >
                     <a className="bg-[#00A3F7] text-white py-2 px-6 absolute top-0 left-0 z-10">
                       Web Design
                     </a>
@@ -73,7 +50,7 @@ const BlogsComponent = () => {
 
                     <Link
                       className="text-[#00A3F7] flex items-center gap-3 ml-5 my-6"
-                      href="/"
+                      href="/pages/blog/blog-title"
                     >
                       Read More{" "}
                       <span>

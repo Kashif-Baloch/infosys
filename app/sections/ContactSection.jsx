@@ -1,7 +1,10 @@
-import Link from "next/link";
 import React from "react";
 
 const ContactSection = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="w-[90%] mx-auto mt-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 grid grid-cols-1 lg:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16">
@@ -46,13 +49,13 @@ const ContactSection = () => {
           </div>
         </div>
         <div className="bg-[#00A3F7] p-8">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="mb-5">
               <input
                 type="text"
                 placeholder="Your Name"
                 autocomplete="false"
-                className="w-full px-4 py-3  placeholder:text-gray-800 dark:text-white outline-none dark:placeholder:text-gray-200"
+                className="w-full px-4 py-3  placeholder:text-gray-800  outline-none "
                 name="name"
               />
             </div>
@@ -61,7 +64,7 @@ const ContactSection = () => {
                 type="text"
                 placeholder="Your Email"
                 autocomplete="false"
-                className="w-full px-4 py-3  placeholder:text-gray-800 dark:text-white outline-none dark:placeholder:text-gray-200"
+                className="w-full px-4 py-3  placeholder:text-gray-800  outline-none "
                 name="name"
               />
             </div>
@@ -71,20 +74,20 @@ const ContactSection = () => {
                 type="text"
                 placeholder="Enter Service Name"
                 autocomplete="false"
-                className="w-full px-4 py-3  placeholder:text-gray-800 dark:text-white outline-none dark:placeholder:text-gray-200 "
+                className="w-full px-4 py-3  placeholder:text-gray-800 outline-none  "
                 name="service"
               />
             </div>
             <div className="mb-3">
               <textarea
                 placeholder="Message"
-                className="w-full px-4 py-3 placeholder:text-gray-800 outline-none dark:text-white dark:placeholder:text-gray-200 h-36"
+                className="w-full px-4 py-3 placeholder:text-gray-800 outline-none  h-36"
                 name="message"
               ></textarea>
             </div>
             <button
               type="submit"
-              className="w-full py-4 font-semibold text-white transition-colors bg-[#061E42] focus:outline-none focus:ring-offset-2 focus:ring focus:ring-gray-200 px-7 dark:bg-white dark:text-black "
+              className="w-full py-4 font-semibold text-white transition-colors bg-[#061E42] outline-none px-7"
             >
               Request A Quote
             </button>

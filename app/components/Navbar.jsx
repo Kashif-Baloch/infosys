@@ -59,16 +59,16 @@ const Navbar = () => {
             </div>
           </div>
           <div className="flex mr-3 lg:mr-16 items-center justify-center space-x-2">
-            <a href="#" className="border rounded-full p-1">
+            <a href="#" className="border hover:bg-[#00A3F7] rounded-full p-1">
               <img src="/assets/svgs/mdi_twitter.svg" alt="" />
             </a>
-            <a href="#" className="border rounded-full p-1">
+            <a href="#" className="border hover:bg-[#00A3F7] rounded-full p-1">
               <img src="/assets/svgs/ri_facebook-fill.svg" alt="" />
             </a>
-            <a href="#" className="border rounded-full p-1">
+            <a href="#" className="border hover:bg-[#00A3F7] rounded-full p-1">
               <img src="/assets/svgs/ri_linkedin-fill.svg" alt="" />
             </a>
-            <a href="#" className="border rounded-full p-1">
+            <a href="#" className="border hover:bg-[#00A3F7] rounded-full p-1">
               <img
                 className="w-[17px]"
                 src="/assets/svgs/ri_instagram.svg"
@@ -84,32 +84,50 @@ const Navbar = () => {
 
           <ul className="hidden lg:flex gap-8 text-[15px] font-[600]">
             <li>
-              <Link href="/" className="text-[#00A3F7]">
+              <Link
+                href="/"
+                className="text-[#00A3F7] transition-all hover:text-[#00A3F7]"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/pages/about" className="text-gray-200">
+              <Link
+                href="/pages/about"
+                className="text-gray-200 transition-all hover:text-[#00A3F7]"
+              >
                 About Us
               </Link>
             </li>
             <li>
-              <Link href="/pages/services" className="text-gray-200">
+              <Link
+                href="/pages/services"
+                className="text-gray-200 transition-all hover:text-[#00A3F7]"
+              >
                 Services
               </Link>
             </li>
             <li>
-              <Link href="/pages/blogs" className="text-gray-200">
+              <Link
+                href="/pages/blogs"
+                className="text-gray-200 transition-all hover:text-[#00A3F7]"
+              >
                 Blogs
               </Link>
             </li>
             <li>
-              <Link href="/pages/prices" className="text-gray-200">
+              <Link
+                href="/pages/prices"
+                className="text-gray-200 transition-all hover:text-[#00A3F7]"
+              >
                 Prices
               </Link>
             </li>
             <li>
-              <Link href="/pages/contact" className="text-gray-200">
+              <Link
+                href="/pages/contact"
+                className="text-gray-200 transition-all hover:text-[#00A3F7]"
+              >
                 Contact
               </Link>
             </li>
@@ -118,7 +136,7 @@ const Navbar = () => {
             <img src="/assets/newsvgs/search.svg" alt="Search" />
             <Link
               href="/download"
-              className="hidden text-center lg:flex text-gray-100 bg-[#00A3F7] py-2 px-3 loto text-[16px]"
+              className="hidden transition-all hover:border-white hover:bg-transparent border border-[#00A3F7] text-center lg:flex text-gray-100 bg-[#00A3F7] py-2 px-3 loto text-[16px]"
             >
               Download Pro Version
             </Link>
@@ -132,40 +150,50 @@ const Navbar = () => {
           id="mobileMenu"
           className="hidden bg-gray-800 text-white p-5 space-y-3"
         >
-          <Link href="/" className="block hover:bg-gray-700 py-2 px-4 rounded">
+          <Link
+            onClick={navbarHandler}
+            href="/"
+            className="block hover:bg-gray-700 py-2 px-4 rounded"
+          >
             Home
           </Link>
           <Link
+            onClick={navbarHandler}
             href="/pages/about"
             className="block hover:bg-gray-700 py-2 px-4 rounded"
           >
             About Us
           </Link>
           <Link
+            onClick={navbarHandler}
             href="/pages/services"
             className="block hover:bg-gray-700 py-2 px-4 rounded"
           >
             Services
           </Link>
           <Link
+            onClick={navbarHandler}
             href="/pages/blogs"
             className="block hover:bg-gray-700 py-2 px-4 rounded"
           >
             Blogs
           </Link>
           <Link
+            onClick={navbarHandler}
             href="/pages/prices"
             className="block hover:bg-gray-700 py-2 px-4 rounded"
           >
             Prices
           </Link>
           <Link
+            onClick={navbarHandler}
             href="/pages/contact"
             className="block hover:bg-gray-700 py-2 px-4 rounded"
           >
             Contact
           </Link>
           <Link
+            onClick={navbarHandler}
             href="/download"
             className="flex text-gray-100 text-center bg-[#00A3F7] py-2 px-3 loto text-[16px]"
           >

@@ -12,7 +12,6 @@ const Heading = ({ ht, hft, hfb }) => {
         </h1>
         <img className="w-[10%]" src="/assets/svgs/Group 11.svg" alt="" />
       </div>
-      ;
     </div>
   );
 };
