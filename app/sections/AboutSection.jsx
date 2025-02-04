@@ -67,7 +67,7 @@ const AboutSection = () => {
             </div>
             <Link
               href="/pages/contact"
-              className="flex mt-8 text-gray-100 hover:bg-transparent hover:border-white border border-[#00a3f7] bg-[#00A3F7] py-2 px-3 loto text-[16px]"
+              className="flex mt-8 hover:text-black text-gray-100 hover:bg-transparent hover:border-gray-700 border border-[#00a3f7] bg-[#00A3F7] py-2 px-3 loto text-[16px]"
             >
               Request A Quote
             </Link>
