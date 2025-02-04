@@ -1,3 +1,5 @@
+/* container mx-auto max-w-7xl px-4 -----> Responsive Queries for wide screen */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,7 +19,19 @@
 
 @media screen and (width>=1428px) {
   .imgres {
-    width: fit-content;
+    width: 40vw;
+  }
+}
+
+@media screen and (width>=1756px) {
+  .imgres {
+    width: 35vw;
+  }
+}
+
+@media screen and (width>=2008px) {
+  .imgres {
+    width: 28vw;
   }
 }
 
@@ -30,5 +44,36 @@
 @media screen and (width<=820px) {
   .ratio {
     aspect-ratio: auto !important;
+  }
+}
+
+@media screen and (width>=1284px) {
+  .ratio {
+    aspect-ratio: 3/3 !important;
+  }
+}
+
+@media screen and (width<=1240px) {
+  .smaple-width {
+    width: 100% !important;
+  }
+}
+
+@media screen and (width>=1760px) {
+  .ab-form {
+    max-width: 24rem;
+    width: 90%;
+  }
+}
+
+@media screen and (width>=1976px) {
+  .ab-form {
+    left: 10%;
+  }
+}
+
+@media screen and (width>=2152) {
+  .ab-form {
+    left: 20%;
   }
 }

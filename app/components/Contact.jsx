@@ -1,9 +1,15 @@
 import React from "react";
 import Heading from "./Heading";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="w-[90%] mt-14 mx-auto">
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 1 }}
+      className="container mx-auto max-w-[74rem] px-2 mt-14"
+    >
       <Heading
         ht={"Contact Us"}
         hft={"If You Have Any Query, Feel"}
@@ -128,7 +134,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

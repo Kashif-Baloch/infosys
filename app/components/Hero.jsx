@@ -11,12 +11,12 @@ const Hero = ({ bred }) => {
         modules={[Navigation]}
         navigation={true}
         loop={true}
-        className="[&_.swiper-button-next]:text-[#fff] h-screen transition-all [&_.swiper-button-prev]:text-[#fff] hover:[&_.swiper-button-prev]:text-[#00a3f7] hover:[&_.swiper-button-next]:text-[#00a3f7]"
+        className="[&_.swiper-button-next]:text-[#fff] h-[80vh] transition-all [&_.swiper-button-prev]:text-[#fff] hover:[&_.swiper-button-prev]:text-[#00a3f7] hover:[&_.swiper-button-next]:text-[#00a3f7]"
       >
-        <div className="loto file:relative h-screen text-white overflow-hidden">
+        <div className="loto file:relative h-[80vh] text-white overflow-hidden">
           <SwiperSlide className="absolute inset-0 -z-10">
             <img
-              src="/assets/pngs/Rectangle 2.png"
+              src="/assets/pngs/Rectangle 2 (1).png"
               alt="Background Image"
               className="object-cover object-center w-full h-full"
             />

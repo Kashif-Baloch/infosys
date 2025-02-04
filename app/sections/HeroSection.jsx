@@ -4,17 +4,22 @@ import React from "react";
 import Sample from "../components/Sample";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
 
 const HeroSection = () => {
   return (
-    <div>
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 1 }}
+    >
       <Swiper
         modules={[Navigation]}
         navigation={true}
         loop={true}
-        className="[&_.swiper-button-next]:text-[#fff] h-screen transition-all [&_.swiper-button-prev]:text-[#fff] hover:[&_.swiper-button-prev]:text-[#00a3f7] hover:[&_.swiper-button-next]:text-[#00a3f7]"
+        className="[&_.swiper-button-next]:hidden md:[&_.swiper-button-next]:block md:[&_.swiper-button-prev]:block [&_.swiper-button-prev]:hidden md:[&_.swiper-button-next]:text-[#fff] h-screen transition-all md:[&_.swiper-button-prev]:text-[#fff] md:hover:[&_.swiper-button-prev]:text-[#00a3f7] md:hover:[&_.swiper-button-next]:text-[#00a3f7]"
       >
         <div className="loto file:relative h-screen text-white overflow-hidden">
           <SwiperSlide className="absolute inset-0 -z-10">
@@ -78,7 +83,7 @@ const HeroSection = () => {
         </div>
       </Swiper>
       <Sample />
-    </div>
+    </motion.div>
   );
 };
 

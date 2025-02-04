@@ -2,7 +2,7 @@ import React from "react";
 
 const Sample = () => {
   return (
-    <div className="w-full relative z-10 lg:w-[70%] mt-[-4.75rem] mx-auto bg-[#00A3F7] justify-center flex-col md:flex-row flex items-center">
+    <div className="w-full smaple-width container mx-auto max-w-7xl relative z-10 lg:w-[70%] mt-[-4.75rem] bg-[#00A3F7] justify-center flex-col md:flex-row flex items-center">
       <div className="flex w-full lg:w-[40%] items-center px-16 py-5 gap-3">
         <div className="bg-white h-full p-[10px]">
           <img src="/assets/svgs/customer 1.svg" alt="Item" />

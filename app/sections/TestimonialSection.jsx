@@ -1,7 +1,7 @@
 "use client";
-
 import React, { useState } from "react";
 import Heading from "../components/Heading";
+import { motion } from "framer-motion";
 import TestimonialCarousel from "../components/TestimonialsComponent";
 
 const TestimonialSection = () => {
@@ -43,7 +43,12 @@ const TestimonialSection = () => {
   ];
   const [activePoint, setActivePoint] = useState(0);
   return (
-    <div className="w-[90%] mt-14 mx-auto">
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 1 }}
+      className="container mx-auto max-w-[74rem] px-10 mt-14"
+    >
       <div className="container mx-auto">
         {/* <img className=" w-[9%]" src="/assets/newsvgs/Group 20.svg" alt="" /> */}
         <div className="flex items-center gap-2 justify-center my-2">
@@ -100,7 +105,7 @@ const TestimonialSection = () => {
           </div>
         </section>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

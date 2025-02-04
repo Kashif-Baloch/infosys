@@ -1,13 +1,18 @@
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <div>
-      <section className="text-gray-600 body-font lg:w-[90%] mx-auto">
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 1 }}
+    >
+      <section className="text-gray-600 container mx-auto max-w-[74rem] body-font">
         <div className="container mx-auto gap-12 flex px-5 py-24 lg:flex-row flex-col items-center">
           <div className="lg:flex-grow lg:w-1/2 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h3 className="text-[#00A3F7] pb-7">About Us</h3>
+            <h3 className="text-[#00A3F7] pb-7 font-semibold">About Us</h3>
             <h1 className="title-font sm:text-[34px] text-2xl font-bold mb-4 text-gray-900">
               The Best IT Solution With 10 Years of
               <br className="hidden mx lg:inline-block" />
@@ -69,14 +74,14 @@ const AboutSection = () => {
           </div>
           <div className="lg:max-w-[28rem] lg:w-full  w-5/6">
             <img
-              className="object-cover object-center rounded"
+              className="object-cover w-full object-center rounded"
               alt="hero"
               src="/assets/pngs/Rectangle 10.png"
             />
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 

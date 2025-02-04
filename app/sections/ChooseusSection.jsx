@@ -1,10 +1,15 @@
 import React from "react";
 import Heading from "../components/Heading";
+import { motion } from "framer-motion";
 
 const ChooseusSection = () => {
   return (
-    <div>
-      <div className="w-[85%] mt-14 mx-auto">
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 1 }}
+    >
+      <div className="container mx-auto max-w-[74rem] px-8 mt-14">
         <div className="container mx-auto">
           <Heading
             ht={"WHY CHOOSE US"}
@@ -52,7 +57,7 @@ const ChooseusSection = () => {
               <img
                 src="/assets/pngs/Rectangle 15.png"
                 alt="Team Working"
-                className=" w-full h-auto object-cover"
+                className="w-full h-auto object-cover"
               />
             </div>
             <div className="flex h-full flex-col md:ml-5 gap-[2rem] md:gap-2">
@@ -95,7 +100,7 @@ const ChooseusSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

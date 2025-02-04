@@ -2,11 +2,17 @@ import React from "react";
 import Heading from "../components/Heading";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { motion } from "framer-motion";
 import "swiper/css/navigation";
 
 const TeamSection = () => {
   return (
-    <div className="w-[85%] mt-14 mx-auto">
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 1 }}
+      className="container mx-auto max-w-[74rem] px-8 mt-14"
+    >
       <div className="container mx-auto">
         <Heading
           ht={"TEAM MEMBERS"}
@@ -88,7 +94,7 @@ const TeamSection = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

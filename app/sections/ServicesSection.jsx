@@ -1,5 +1,6 @@
 import React from "react";
 import Heading from "../components/Heading";
+import { motion } from "framer-motion";
 
 const ServicesSection = () => {
   const services = [
@@ -35,7 +36,12 @@ const ServicesSection = () => {
   ];
 
   return (
-    <div className="w-[90%] mt-24 mx-auto">
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 1 }}
+      className="container mx-auto max-w-[74rem] px-8 mt-24"
+    >
       <div className="container mx-auto">
         <Heading
           ht={"OUR SERVICES"}
@@ -70,7 +76,7 @@ const ServicesSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

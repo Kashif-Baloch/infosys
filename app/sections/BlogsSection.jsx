@@ -1,11 +1,16 @@
 import React from "react";
 import Heading from "../components/Heading";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const BlogsSection = () => {
   return (
-    <div>
-      <div className="w-[85%] mt-14 mx-auto">
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 1 }}
+    >
+      <div className="container mx-auto max-w-[74rem] px-8 mt-14">
         <div className="container mx-auto">
           <Heading
             ht={"LATEST BLOGS"}
@@ -70,7 +75,7 @@ const BlogsSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

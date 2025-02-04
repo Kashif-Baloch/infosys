@@ -1,12 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
-
   return (
-    <div className="w-[90%] mx-auto mt-14">
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 1 }}
+      className="container mx-auto max-w-[74rem] px-10 mt-16"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 grid grid-cols-1 lg:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16">
         <div className="flex flex-col mb-16 md:mb-0">
           <h3 className="text-[#00A3F7] text-lg font-semibold pb-10">
@@ -94,7 +99,7 @@ const ContactSection = () => {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

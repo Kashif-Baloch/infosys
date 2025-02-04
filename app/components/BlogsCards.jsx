@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import BlogsComponent from "./BlogsComponent";
 import SideBar from "./SideBar";
+import { motion } from "framer-motion";
 
 const BlogsCards = () => {
   const blogs = [
@@ -70,7 +71,12 @@ const BlogsCards = () => {
   };
 
   return (
-    <div>
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 1 }}
+      className="container mx-auto max-w-[74rem]"
+    >
       <div className="container flex-col-reverse lg:flex-row mx-auto flex flex-wrap py-6">
         <section className="w-full lg:w-2/3 flex flex-col ">
           <BlogsComponent blog={blog} />
@@ -93,12 +99,12 @@ const BlogsCards = () => {
           </div>
         </section>
         <SideBar
-          blog={blog}
+          blog={blogs}
           handleSearch={handleSearch}
           handleFilter={handleFilter}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

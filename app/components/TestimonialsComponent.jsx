@@ -22,7 +22,8 @@ const TestimonialCarousel = ({ setActivePoint, testimonials }) => {
         820: { slidesPerView: 2, spaceBetween: "5px" }, // 2 slides on tablets
         1024: { slidesPerView: 3 }, // 3 slides on larger screens
       }}
-      className="grid md:!pb-[4rem] grid-cols-1 gap-4 mt-4 leading-7 text-gray-900 border-0 border-gray-200 sm:mt-6 sm:gap-6 md:mt-8 md:gap-0 lg:grid-cols-3"
+      className="md:!pb-[4rem] flex flex-col gap-4 mt-4 leading-7 text-gray-900 border-0 border-gray-200 sm:mt-6 sm:gap-6 md:mt-8 md:gap-0"
+      // className="grid md:!pb-[4rem] grid-cols-1 gap-4 mt-4 leading-7 text-gray-900 border-0 border-gray-200 sm:mt-6 sm:gap-6 md:mt-8 md:gap-0 lg:grid-cols-3"
     >
       {testimonials.map((elem, index) => {
         return (
@@ -30,8 +31,8 @@ const TestimonialCarousel = ({ setActivePoint, testimonials }) => {
             key={index}
             className={`${
               index === (activeSlide + 1) % testimonials.length
-                ? "lg:shadow-2xl bg-white relative w-full z-10 flex flex-col lg:max-w-md p-6 !aspect-[3/2] ratio m-0"
-                : "bg-[#EAF9FF] relative w-full z-10 flex flex-col lg:max-w-md p-6 !aspect-[3/2] ratio m-0"
+                ? "lg:shadow-2xl bg-white w-full z-10 flex flex-col lg:max-w-md p-6 h-full m-0 min-h-[300px]"
+                : "bg-[#EAF9FF] w-full z-10 flex flex-col lg:max-w-md p-6 h-full m-0 min-h-[300px]"
             }`}
           >
             <div className="flex items-center my-3">
@@ -48,7 +49,7 @@ const TestimonialCarousel = ({ setActivePoint, testimonials }) => {
               </div>
             </div>
             <hr className="bg-gray-400 p-[.5px]" />
-            <p className="text-sm font-medium my-4 text-gray-500">
+            <p className="text-sm flex-grow font-medium my-4 text-gray-500">
               {elem.text}
             </p>
           </SwiperSlide>

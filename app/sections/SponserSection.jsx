@@ -1,9 +1,15 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import { motion } from "framer-motion";
 
 const SponserSection = () => {
   return (
-    <div className="w-[90%] mt-20 mb-12  mx-auto">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      className="container mx-auto max-w-[74rem] px-8 mt-20 mb-12"
+    >
       <div className="container mx-auto">
         <Marquee
           loop={0}
@@ -39,7 +45,7 @@ const SponserSection = () => {
           </div>
         </Marquee>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
